@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="MarketLens AI delivers structured crypto market intelligence using live Binance market data with Binance Agent OS MCP connectivity verified."
+  >
+
+  <title>
+    MarketLens AI | Market Intelligence
+  </title>
+
+
+  <!-- ================================
+       STYLES
+  ================================= -->
+
+  <link
+    rel="stylesheet"
+    href="css/variables.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="css/reset.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="css/components.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="css/dashboard.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="css/responsive.css"
+  >
+
+</head>
+
+
+<body>
+
+  <div class="app-shell">
+
+
+    <!-- ================================
+         SIDEBAR
+    ================================= -->
+
+    <aside class="sidebar">
+
+
+      <!-- SIDEBAR TOP -->
+
+      <div>
+
+
+        <!-- BRAND -->
+
+        <div class="brand">
+
+          <div class="brand-mark">
+            ML
+          </div>
+
+          <div class="brand-text">
+
+            <h1>
+              MarketLens
+            </h1>
+
+            <span>
+              AI Intelligence
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="sidebar-nav">
+
+          <a
+            href="#dashboard"
+            class="nav-link active"
+          >
+
+            <span class="nav-icon">
+              ◈
+            </span>
+
+            <span>
+              Dashboard
+            </span>
+
+          </a>
+
+
+          <a
+            href="#analyst"
+            class="nav-link"
+          >
+
+            <span class="nav-icon">
+              ✦
+            </span>
+
+            <span>
+              AI Analyst
+            </span>
+
+          </a>
+
+
+          <a
+            href="#markets"
+            class="nav-link"
+          >
+
+            <span class="nav-icon">
+              ▥
+            </span>
+
+            <span>
+              Markets
+            </span>
+
+          </a>
+
+
+          <a
+            href="#reports"
+            class="nav-link"
+          >
+
+            <span class="nav-icon">
+              ▤
+            </span>
+
+            <span>
+              Reports
+            </span>
+
+          </a>
+
+
+          <a
+            href="#about"
+            class="nav-link"
+          >
+
+            <span class="nav-icon">
+              ⓘ
+            </span>
+
+            <span>
+              About
+            </span>
+
+          </a>
+
+        </nav>
+
+      </div>
+
+
+
+      <!-- SIDEBAR STATUS -->
+
+      <div class="sidebar-footer">
+
+        <div class="agent-status">
+
+          <div class="status-dot"></div>
+
+          <div>
+
+            <strong>
+              Binance Data Live
+            </strong>
+
+            <span>
+              Agent OS MCP Verified
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </aside>
+
+
+
+    <!-- ================================
+         MAIN CONTENT
+    ================================= -->
+
+    <main class="main-content">
+
+
+      <!-- ================================
+           HERO
+      ================================= -->
+
+      <section
+        class="hero-card"
+        id="dashboard"
+      >
+
+        <div
+          class="hero-content"
+          id="analyst"
+        >
+
+          <span class="hero-badge">
+            Binance Market Intelligence
+          </span>
+
+
+          <h3>
+            Understand markets with
+            <span>
+              AI-powered research.
+            </span>
+          </h3>
+
+
+          <p>
+            Analyze market momentum,
+            hourly price structure,
+            volume activity and relative
+            market strength using live
+            Binance market data.
+          </p>
+
+
+
+          <!-- AGENT SEARCH -->
+
+          <form
+            class="agent-search"
+            id="agentForm"
+          >
+
+            <input
+              type="text"
+              id="agentInput"
+              placeholder="Ask MarketLens to analyze the market..."
+              autocomplete="off"
+            >
+
+            <button
+              type="submit"
+            >
+              Analyze
+            </button>
+
+          </form>
+
+
+
+          <!-- PROMPT EXAMPLES -->
+
+          <div class="prompt-examples">
+
+            <button
+              type="button"
+              class="prompt-chip"
+            >
+              Analyze BTCUSDT
+            </button>
+
+
+            <button
+              type="button"
+              class="prompt-chip"
+            >
+              Compare BTC, ETH &amp; BNB
+            </button>
+
+
+            <button
+              type="button"
+              class="prompt-chip"
+            >
+              Morning market brief
+            </button>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- ================================
+           MARKET SNAPSHOT
+      ================================= -->
+
+      <section
+        class="section"
+        id="markets"
+      >
+
+        <div class="section-heading">
+
+          <div>
+
+            <div class="eyebrow">
+              LIVE MARKET DATA
+            </div>
+
+            <h3>
+              Market Snapshot
+            </h3>
+
+          </div>
+
+
+          <div class="network-badge">
+            Source: Binance
+          </div>
+
+        </div>
+
+
+
+        <div class="market-grid">
+
+
+          <!-- BTC -->
+
+          <article
+            class="market-card"
+            data-symbol="BTCUSDT"
+          >
+
+            <div class="market-card-top">
+
+              <div class="coin-icon">
+                ₿
+              </div>
+
+              <span class="market-symbol">
+                BTC / USDT
+              </span>
+
+            </div>
+
+
+            <h4 class="market-price">
+              Loading...
+            </h4>
+
+
+            <div class="market-card-bottom">
+
+              <span class="market-change">
+                --
+              </span>
+
+              <span>
+                24h
+              </span>
+
+            </div>
+
+          </article>
+
+
+
+          <!-- ETH -->
+
+          <article
+            class="market-card"
+            data-symbol="ETHUSDT"
+          >
+
+            <div class="market-card-top">
+
+              <div class="coin-icon">
+                Ξ
+              </div>
+
+              <span class="market-symbol">
+                ETH / USDT
+              </span>
+
+            </div>
+
+
+            <h4 class="market-price">
+              Loading...
+            </h4>
+
+
+            <div class="market-card-bottom">
+
+              <span class="market-change">
+                --
+              </span>
+
+              <span>
+                24h
+              </span>
+
+            </div>
+
+          </article>
+
+
+
+          <!-- BNB -->
+
+          <article
+            class="market-card"
+            data-symbol="BNBUSDT"
+          >
+
+            <div class="market-card-top">
+
+              <div class="coin-icon">
+                B
+              </div>
+
+              <span class="market-symbol">
+                BNB / USDT
+              </span>
+
+            </div>
+
+
+            <h4 class="market-price">
+              Loading...
+            </h4>
+
+
+            <div class="market-card-bottom">
+
+              <span class="market-change">
+                --
+              </span>
+
+              <span>
+                24h
+              </span>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- ================================
+           INTELLIGENCE GRID
+      ================================= -->
+
+      <section
+        class="dashboard-grid"
+        id="reports"
+      >
+
+
+        <!-- ================================
+             WORKFLOW PANEL
+        ================================= -->
+
+        <article class="panel">
+
+          <div class="panel-heading">
+
+            <div>
+
+              <div class="eyebrow">
+                AGENT ACTIVITY
+              </div>
+
+              <h3>
+                Intelligence Workflow
+              </h3>
+
+            </div>
+
+
+            <span
+              class="status-badge"
+              id="agentStatusBadge"
+            >
+              Ready
+            </span>
+
+          </div>
+
+
+
+          <div class="workflow">
+
+
+            <!-- STEP 1 -->
+
+            <div
+              class="workflow-step"
+              id="workflowUnderstand"
+            >
+
+              <div class="step-icon">
+                1
+              </div>
+
+              <div>
+
+                <strong>
+                  Understand Request
+                </strong>
+
+                <span>
+                  Interpret the research objective
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <div class="workflow-line"></div>
+
+
+
+            <!-- STEP 2 -->
+
+            <div
+              class="workflow-step"
+              id="workflowRetrieve"
+            >
+
+              <div class="step-icon">
+                2
+              </div>
+
+              <div>
+
+                <strong>
+                  Retrieve Market Data
+                </strong>
+
+                <span>
+                  Query Binance market information
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <div class="workflow-line"></div>
+
+
+
+            <!-- STEP 3 -->
+
+            <div
+              class="workflow-step"
+              id="workflowAnalyze"
+            >
+
+              <div class="step-icon">
+                3
+              </div>
+
+              <div>
+
+                <strong>
+                  Analyze
+                </strong>
+
+                <span>
+                  Compare relevant market metrics
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <div class="workflow-line"></div>
+
+
+
+            <!-- STEP 4 -->
+
+            <div
+              class="workflow-step"
+              id="workflowGenerate"
+            >
+
+              <div class="step-icon">
+                4
+              </div>
+
+              <div>
+
+                <strong>
+                  Generate Intelligence
+                </strong>
+
+                <span>
+                  Produce structured findings
+                </span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+
+        <!-- ================================
+             REPORT PANEL
+        ================================= -->
+
+        <article
+          class="panel"
+          id="reportPanel"
+        >
+
+          <div class="panel-heading">
+
+            <div>
+
+              <div class="eyebrow">
+                AI REPORT
+              </div>
+
+              <h3>
+                Intelligence Report
+              </h3>
+
+            </div>
+
+
+            <button
+              type="button"
+              class="icon-btn"
+              aria-label="Report options"
+            >
+              •••
+            </button>
+
+          </div>
+
+
+
+          <div
+            class="empty-report"
+            id="reportContent"
+          >
+
+            <div class="report-symbol">
+              ✦
+            </div>
+
+            <h4>
+              Ready for analysis
+            </h4>
+
+            <p>
+              Select a research prompt
+              or ask MarketLens to analyze
+              current Binance market conditions.
+            </p>
+
+          </div>
+
+        </article>
+
+      </section>
+
+
+
+      <!-- ================================
+           ABOUT
+      ================================= -->
+
+      <section
+        class="section"
+        id="about"
+      >
+
+        <div class="section-heading">
+
+          <div>
+
+            <div class="eyebrow">
+              TECHNOLOGY
+            </div>
+
+            <h3>
+              MarketLens Architecture
+            </h3>
+
+          </div>
+
+        </div>
+
+
+        <div
+          class="panel"
+          style="min-height: auto;"
+        >
+
+          <p
+            style="
+              color: var(--text-secondary);
+              font-size: 13px;
+              line-height: 1.8;
+            "
+          >
+            MarketLens combines live Binance
+            public market data with a structured
+            intelligence workflow for analyzing
+            momentum, hourly market structure,
+            volume activity and relative strength.
+          </p>
+
+
+          <p
+            style="
+              margin-top: 14px;
+              color: var(--text-secondary);
+              font-size: 13px;
+              line-height: 1.8;
+            "
+          >
+            Binance Agent OS MCP connectivity
+            has been successfully verified through
+            an authenticated MCP-compatible
+            development environment using
+            read-only market access.
+          </p>
+
+
+          <p
+            style="
+              margin-top: 14px;
+              color: var(--text-muted);
+              font-size: 11px;
+              line-height: 1.7;
+            "
+          >
+            MarketLens provides market research
+            and observational intelligence only.
+            It does not execute trades or provide
+            financial advice.
+          </p>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- ================================
+           FOOTER
+      ================================= -->
+
+      <footer class="app-footer">
+
+        <span>
+          MarketLens AI
+        </span>
+
+        <span>
+          Powered by Binance market data
+          • Agent OS MCP Verified
+        </span>
+
+      </footer>
+
+
+    </main>
+
+  </div>
+
+
+
+  <!-- ================================
+       JAVASCRIPT
+  ================================= -->
+
+  <script src="js/utils.js"></script>
+
+  <script src="js/api.js"></script>
+
+  <script src="js/ui.js"></script>
+
+  <script src="js/agent.js"></script>
+
+  <script src="js/app.js"></script>
+
+
+</body>
+
+</html>

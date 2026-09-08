@@ -1,0 +1,27 @@
+{
+  "name": "marketlens-ai",
+  "version": "1.0.0",
+  "description": "AI-powered market intelligence built with Binance Agent OS.",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js"
+  },
+  "keywords": [
+    "binance",
+    "agent-os",
+    "ai",
+    "market-intelligence"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/client": "^2.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.0.0",
+    "express": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  }
+}

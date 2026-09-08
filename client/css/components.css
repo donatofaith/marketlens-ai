@@ -1,0 +1,99 @@
+.eyebrow {
+  margin-bottom: 8px;
+
+  color: var(--primary);
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 1.7px;
+}
+
+.icon-btn {
+  width: 40px;
+  height: 40px;
+
+  display: grid;
+  place-items: center;
+
+  border: 1px solid var(--border);
+
+  border-radius: 10px;
+
+  background: var(--surface);
+
+  color: var(--text-primary);
+
+  cursor: pointer;
+
+  transition: var(--transition);
+}
+
+.icon-btn:hover {
+  border-color: var(--primary);
+}
+
+.network-badge,
+.status-badge,
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+
+  border-radius: 999px;
+
+  font-weight: 600;
+}
+
+.network-badge {
+  padding: 9px 13px;
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+
+  color: var(--text-secondary);
+
+  font-size: 12px;
+}
+
+.status-badge {
+  padding: 7px 11px;
+
+  background: var(--primary-soft);
+
+  color: var(--primary);
+
+  font-size: 11px;
+}
+
+.hero-badge {
+  padding: 7px 12px;
+
+  background: var(--primary-soft);
+
+  color: var(--primary);
+
+  font-size: 12px;
+}
+
+.text-button {
+  background: none;
+
+  color: var(--text-secondary);
+
+  cursor: pointer;
+
+  transition: var(--transition);
+}
+
+.text-button:hover {
+  color: var(--primary);
+}
+
+.positive {
+  color: var(--success);
+}
+
+.negative {
+  color: var(--danger);
+}

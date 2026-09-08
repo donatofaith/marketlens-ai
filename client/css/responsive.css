@@ -1,0 +1,131 @@
+@media (max-width: 1050px) {
+
+  .sidebar {
+    width: 215px;
+  }
+
+  .main-content {
+    width: calc(100% - 215px);
+
+    margin-left: 215px;
+
+    padding: 25px;
+  }
+
+  .market-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .market-card:last-child {
+    grid-column: span 2;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+
+  .sidebar {
+    display: none;
+  }
+
+  .main-content {
+    width: 100%;
+
+    margin-left: 0;
+
+    padding: 20px 16px;
+  }
+
+  #mobileMenuButton {
+    display: grid;
+  }
+
+  .network-badge {
+    display: none;
+  }
+
+  .topbar h2 {
+    font-size: 21px;
+  }
+
+  .hero-card {
+    padding: 26px 20px;
+  }
+
+  .hero-content h3 {
+    font-size: 34px;
+  }
+
+  .agent-search {
+    flex-direction: column;
+
+    padding: 7px;
+  }
+
+  .agent-search input {
+    min-height: 48px;
+  }
+
+  .agent-search button {
+    width: 100%;
+  }
+
+  .market-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .market-card:last-child {
+    grid-column: auto;
+  }
+
+  .panel {
+    min-height: auto;
+  }
+
+  .app-footer {
+    flex-direction: column;
+
+    gap: 5px;
+  }
+}
+
+@media (max-width: 460px) {
+
+  .main-content {
+    padding: 16px 12px;
+  }
+
+  .hero-card {
+    padding: 23px 17px;
+  }
+
+  .hero-content h3 {
+    font-size: 29px;
+  }
+
+  .hero-content > p {
+    font-size: 13px;
+  }
+
+  .prompt-examples {
+    flex-direction: column;
+  }
+
+  .prompt-chip {
+    width: 100%;
+
+    text-align: left;
+  }
+
+  .section-heading {
+    align-items: flex-end;
+  }
+
+  .text-button {
+    font-size: 11px;
+  }
+}
