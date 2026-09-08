@@ -13,6 +13,151 @@ const promptChips =
     ".prompt-chip"
   );
 
+const navLinks =
+  document.querySelectorAll(
+    ".sidebar-nav .nav-link"
+  );
+
+
+/* =================================
+   SIDEBAR NAVIGATION
+================================= */
+
+function setActiveNav(activeLink) {
+
+  navLinks.forEach(
+    (link) => {
+      link.classList.remove(
+        "active"
+      );
+    }
+  );
+
+  activeLink.classList.add(
+    "active"
+  );
+
+}
+
+
+navLinks.forEach(
+  (link) => {
+
+    link.addEventListener(
+      "click",
+      (event) => {
+
+        const targetId =
+          link.getAttribute(
+            "href"
+          );
+
+        if (
+          !targetId ||
+          !targetId.startsWith("#")
+        ) {
+          return;
+        }
+
+        const targetSection =
+          document.querySelector(
+            targetId
+          );
+
+        if (!targetSection) {
+          return;
+        }
+
+        event.preventDefault();
+
+        targetSection.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+
+        history.replaceState(
+          null,
+          "",
+          targetId
+        );
+
+        setActiveNav(
+          link
+        );
+
+      }
+    );
+
+  }
+);
+
+
+const observedSections = [
+  "dashboard",
+  "analyst",
+  "markets",
+  "reports",
+  "about"
+]
+  .map(
+    (id) =>
+      document.getElementById(id)
+  )
+  .filter(Boolean);
+
+
+if (
+  "IntersectionObserver" in window
+) {
+
+  const sectionObserver =
+    new IntersectionObserver(
+      (entries) => {
+
+        const visibleEntry =
+          entries
+            .filter(
+              (entry) =>
+                entry.isIntersecting
+            )
+            .sort(
+              (a, b) =>
+                b.intersectionRatio -
+                a.intersectionRatio
+            )[0];
+
+        if (!visibleEntry) {
+          return;
+        }
+
+        const matchingLink =
+          document.querySelector(
+            `.sidebar-nav .nav-link[href="#${visibleEntry.target.id}"]`
+          );
+
+        if (matchingLink) {
+          setActiveNav(
+            matchingLink
+          );
+        }
+
+      },
+      {
+        root: null,
+        threshold: [0.25, 0.5, 0.75]
+      }
+    );
+
+  observedSections.forEach(
+    (section) => {
+      sectionObserver.observe(
+        section
+      );
+    }
+  );
+
+}
+
 
 /* =================================
    PROMPT CHIPS
