@@ -6,6 +6,12 @@ MarketLens AI turns market prices, 24-hour performance, hourly candle structure,
 
 [Open the live demo](https://marketlens-ai-ten.vercel.app) · [View the repository](https://github.com/donatofaith/marketlens-ai)
 
+## Product preview
+
+[![MarketLens AI dashboard showing live Binance market intelligence](docs/images/marketlens-dashboard.png)](https://marketlens-ai-ten.vercel.app)
+
+*MarketLens combines supported research prompts with live BTC, ETH, and BNB market data in one explainable research workspace.*
+
 > **Ask a market question → collect Binance data → analyze the evidence → receive a readable report**
 
 Built for the **Binance Agent OS Mini Hackathon**.
