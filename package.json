@@ -1,7 +1,7 @@
 {
   "name": "marketlens-ai",
   "version": "1.0.0",
-  "description": "AI-powered market intelligence built with Binance Agent OS.",
+  "description": "Explainable crypto market intelligence powered by live Binance data and Binance Agent OS.",
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",
@@ -10,10 +10,11 @@
   "keywords": [
     "binance",
     "agent-os",
-    "ai",
+    "mcp",
+    "crypto",
     "market-intelligence"
   ],
-  "author": "",
+  "author": "Faith Oluwalana",
   "license": "MIT",
   "dependencies": {
     "@modelcontextprotocol/client": "^2.0.0",
